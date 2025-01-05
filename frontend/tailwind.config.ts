@@ -11,6 +11,7 @@ export default {
       colors: {
         'custom-black' : '#0d0d0d',
         'custom-green' : '#49f292',
+        'custom-red': '#e54f42'
       },
       screens: {
         'md' : '35em',
@@ -42,7 +43,7 @@ export default {
         },
         blink: {
           '0%, 100%': { opacity: '1' },
-          '50%': { opacity: 0 },
+          '50%': { opacity: '0' },
         },
       }
     },

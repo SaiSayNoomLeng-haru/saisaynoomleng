@@ -10,7 +10,6 @@ import { navLinks } from "../definitions";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
-import classNames from "classnames";
 
 export default function Navbar({
     className = '',
@@ -24,7 +23,6 @@ export default function Navbar({
     const navLinks = [
         { name: 'Home', url: '/'},
         { name: 'About Me', url: '/about-me'},
-        { name: 'Resume', url: '/resume'},
         { name: 'Portfolio', url: '/portfolio'},
         { name: 'Certificates', url: '/certificates'},
         { name: 'Contact', url: '/contact'}
@@ -51,12 +49,20 @@ export default function Navbar({
 
     return(
         <header className={headerClass}>
-            { resolvedTheme === 'dark' ?
-                <GoSun  
-                    onClick={() => setTheme('light')}/> :
-                <PiMoonThin  
-                    onClick={() => setTheme('dark')}/>
-            }
+            <div className="flex gap-4 items-center">
+                <Link
+                    href='/'
+                    className="capitalize font-bold text-custom-green">
+                        Sai
+                </Link>
+
+                { resolvedTheme === 'dark' ?
+                    <GoSun  
+                        onClick={() => setTheme('light')}/> :
+                    <PiMoonThin  
+                        onClick={() => setTheme('dark')}/>
+                }
+            </div>
 
             <button 
                 aria-label="navbar toggle button"

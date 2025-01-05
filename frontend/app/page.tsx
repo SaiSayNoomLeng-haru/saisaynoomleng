@@ -8,14 +8,13 @@ import Image from "next/image";
 
 export default function Home() {
 
-
   // classes and styles
   const homePage = clsx(
     'min-h-[90vh] relative custom-container grid py-5'
   )
 
   const typewriter = clsx(
-    'flex items-center whitespace-nowrap overflow-hidden w-[18ch] relative place-self-center relative z-10'
+    'flex items-center tracking-widest font-mono  whitespace-nowrap overflow-hidden w-[25ch] relative place-self-center relative z-20'
   )
 
   const text = clsx(
@@ -23,7 +22,7 @@ export default function Home() {
   )
 
   const cursor = clsx(
-    'inline-block ml-2 animate-blink text-fs-500'
+    'inline-block animate-blink text-fs-500'
   )
   return (
     <div className={`${homePage} homepage`}>
@@ -38,17 +37,17 @@ export default function Home() {
           width={800}
           height={800}
           alt="my portrait"
-          className="absolute opacity-50 bottom-0 max-w-[80%] place-self-center"
+          className="absolute bottom-0 z-0 max-w-[80%] place-self-center mix-blend-overlay"
           priority
           />
 
-      <div className="flex items-center justify-between justify-self-center self-end max-w-[80%] relative z-10">  
+      <div className="flex items-center justify-between justify-self-center self-end max-w-[80%] relative z-20">  
           <p className="text-fs-300 md:text-fs-400">Hello, I'm <span className="text-custom-green font-semibold">Sai Say Noom Leng</span>, Front-end Developer Based in Columbia, MO.</p>
 
           <Link 
             href='/about-me' 
             className="animate-bounce">
-            <IoIosArrowDown />
+            <IoIosArrowDown className="text-custom-red text-fs-600" />
           </Link>
       </div>
 

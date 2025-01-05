@@ -11,20 +11,20 @@ export default function SocialLinks({className = ''}){
         <div className={socialClass}>
             <Link
                 href='https://www.linkedin.com/in/sai-say-noom-leng-72a94031a/'
-                className="hover:text-custom-green"
+                className="text-custom-green"
                 >
                     <FaLinkedin />
             </Link>
 
             <Link
                 href='https://github.com/SaiSayNoomLeng-haru'
-                className="hover:text-custom-green">
+                className="text-custom-green">
                     <FaGithub />
             </Link>
 
             <Link
                 href=''
-                className="hover:text-custom-green">
+                className="text-custom-green">
                     <SiLeetcode />
             </Link>
 

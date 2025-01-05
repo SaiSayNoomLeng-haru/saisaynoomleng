@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply tracking-normal leading-normal text-fs-400 overflow-x-hidden min-h-screen
+        @apply tracking-normal leading-normal text-fs-400 overflow-x-hidden min-h-screen 
     }
 }
 
