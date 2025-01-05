@@ -11,7 +11,8 @@ export default {
       colors: {
         'custom-black' : '#0d0d0d',
         'custom-green' : '#49f292',
-        'custom-red': '#e54f42'
+        'custom-red': '#e54f42',
+        'custom-white' : '#f4e8da'
       },
       screens: {
         'md' : '35em',

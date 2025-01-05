@@ -28,7 +28,7 @@ export default function Home() {
     <div className={`${homePage} homepage`}>
 
       <div className={typewriter}>
-        <span className={text}>I develop <span className="text-custom-green font-semibold ">Web Apps</span></span>
+        <span className={text}>I develop <span className="text-custom-green font-semibold ">Web Apps.</span></span>
         <span className={cursor}> |</span>
       </div>
 

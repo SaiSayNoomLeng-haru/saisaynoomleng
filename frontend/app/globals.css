@@ -18,5 +18,5 @@
 }
 
 .light{
-    @apply bg-white text-custom-black
+    @apply bg-custom-white text-custom-black
 }
