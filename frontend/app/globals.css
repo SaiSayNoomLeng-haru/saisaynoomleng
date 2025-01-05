@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply tracking-normal leading-normal text-fs-400 overflow-x-hidden min-h-screen
+    }
+}
+
+.custom-container{
+    margin-block: 1rem;
+    padding-inline: 1rem;
+}
+
+.dark{
+    @apply bg-custom-black text-white
+}
+
+.light{
+    @apply bg-white text-custom-black
+}
