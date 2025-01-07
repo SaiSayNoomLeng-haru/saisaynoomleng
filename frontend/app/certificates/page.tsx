@@ -51,7 +51,7 @@ export default function Certificates() {
         { type: 'Coursera project network', key: 'provider', value: 'coursera project network' },
         { type: 'Coursera instructor network', key: 'provider', value: 'coursera instructor network' }
     ];
-
+    
     // classes and styles
     const certificatesPage = clsx(
         'custom-container space-y-10'
@@ -68,7 +68,6 @@ export default function Certificates() {
     return (
         <section className={certificatesPage}>
             <p>My <span className="text-custom-green">Certificates</span></p>
-
             <div className="grid grid-cols-filter-grid min-h-screen">
                 <div className={filterComponent}>
                     <div className="flex justify-between">

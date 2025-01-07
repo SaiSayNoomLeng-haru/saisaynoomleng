@@ -53,3 +53,17 @@ export async function getCertificateDetails(id: string) {
     const data = await resp.json();
     return data.data;
 }
+
+// get portfolio detail
+export async function getPortfolio(key: string | null, value: string | null, page = 1, pageSize = 4){
+    const baseUrl = key && key !== null ? 
+    `http://127.0.0.1:1337/api/portfolios?filters[${key}][$contains]=${value}&populate[0]=imageUrl&pagination[page]=${page}&pagination[pageSize]=${pageSize}` :
+    `http://127.0.0.1:1337/api/portfolios?populate[0]=imageUrl&pagination[page]=${page}&pagination[pageSize]=${pageSize}`
+
+    const resp = await fetch(baseUrl);
+    const data = await resp.json();
+    return{
+        portfolios: data.data,
+        pagination: data.meta.pagination
+    }
+}

@@ -20,13 +20,15 @@ export type certificates = {
     provider: string
     type: string
     skillGained: string
-    imgUrl: {
-        formats: {
-            large: imageFormat
-            small: imageFormat
-            medium: imageFormat
-            thumbnail: imageFormat
-        }
+    imgUrl: imageUrl
+}
+
+export type imageUrl = {
+    formats: {
+        large: imageFormat
+        small: imageFormat
+        medium: imageFormat
+        thumbnail: imageFormat
     }
 }
 
@@ -34,4 +36,13 @@ export type imageFormat = {
     width: number
     height: number
     url: string
+}
+
+// portfolios
+export type Portfolios = {
+    name: string
+    type: string
+    languageUsed: string[]
+    url: string
+    imageUrl: imageUrl
 }

@@ -18,8 +18,6 @@ export default async function CertificateDetail({
         imgUrl
     } = data
 
-    console.log(imgUrl)
-
     // classes and styles
     const certiDetail = clsx(
         'custom-container grid gap-5'
