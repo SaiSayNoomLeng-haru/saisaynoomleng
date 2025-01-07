@@ -3,8 +3,6 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-import Image from "next/image";
-
 
 export default function Home() {
 
@@ -31,15 +29,6 @@ export default function Home() {
         <span className={text}>I develop <span className="text-custom-green font-semibold ">Web Apps.</span></span>
         <span className={cursor}> |</span>
       </div>
-
-      <Image 
-          src='/assets/images/myPhoto1.png'
-          width={800}
-          height={800}
-          alt="my portrait"
-          className="absolute bottom-0 z-0 max-w-[80%] place-self-center mix-blend-overlay"
-          priority
-          />
 
       <div className="flex items-center justify-between justify-self-center self-end max-w-[80%] relative z-20">  
           <p className="text-fs-300 md:text-fs-400">Hello, I'm <span className="text-custom-green font-semibold">Sai Say Noom Leng</span>, Front-end Developer Based in Columbia, MO.</p>

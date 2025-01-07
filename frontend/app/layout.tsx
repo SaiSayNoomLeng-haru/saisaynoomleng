@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-      <html lang="en" suppressHydrationWarning={true}>
+      <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.className} antialiased`}>
         <DarkModeProvider>
             <Navbar className="col-span-full" />

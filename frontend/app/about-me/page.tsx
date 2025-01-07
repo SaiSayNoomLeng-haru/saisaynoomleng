@@ -17,7 +17,9 @@ export default function AboutMe(){
 
             <p className="first-letter:text-fs-700 first-letter:mr-5 first-letter:float-start first-letter:text-custom-green text-justify text-fs-300">I am a self-taught developer currently learning and working on front-end. I'm an active student at Columbia College, Missouri majoring in Computer Science. I started off my software engineering journey with web programming. I love web technologies especially JavaScript.</p>
 
-            <p className="text-justify text-fs-300">Proficient in <span className="text-custom-green">Modern Web Framewroks and Libraries</span> such as <span className="text-custom-green font-semibold">ReactJS, Next.js and TailwindCSS.</span> As a front-end web developer, I'm confident in working with <span className="text-custom-green">APIs, Responsive Web Designs</span> and my primary focus is on <span className="text-custom-green">user-friendly experiences that meet the needs of a diverse online audience.</span></p>
+            <p className="text-justify text-fs-300">Proficient in <span className="text-custom-green">Modern Web Frameworks and Libraries</span> such as <span className="text-custom-green font-semibold">ReactJS, Next.js and TailwindCSS.</span> As a front-end web developer, I'm confident in working with <span className="text-custom-green">APIs, Responsive Web Designs</span> and my primary focus is on <span className="text-custom-green">user-friendly experiences that meet the needs of a diverse online audience.</span></p>
+
+            <p className="text-justify text-fs-300">I love building <span className="text-custom-green">E-commerce Websites, landing pages and blogs websites.</span></p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 place-items-center gap-5 grid-flow-dense">
                 <p className="col-span-full text-center text-gray-500">Programming Languages and technologies I'm confident with</p>

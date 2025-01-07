@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificates",
+  "info": {
+    "singularName": "certificate",
+    "pluralName": "certificates",
+    "displayName": "certificate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imgUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "awardedDate": {
+      "type": "date"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "skillGained": {
+      "type": "string"
+    }
+  }
+}

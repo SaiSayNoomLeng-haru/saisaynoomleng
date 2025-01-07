@@ -30,3 +30,26 @@ export async function SendForm(formData : FormData){
         }
     }
 }
+
+// get certificates
+export async function getCertificates( key : string | null, value: string | null, page = 1, pageSize = 4 ){
+    const baseUrl = key && key !== null ? 
+    `http://127.0.0.1:1337/api/certificates?populate[0]=imgUrl&filters[${key}][$eq]=${value}&pagination[page]=${page}&pagination[pageSize]=${pageSize}` : 
+    `http://127.0.0.1:1337/api/certificates?populate[0]=imgUrl&pagination[page]=${page}&pagination[pageSize]=${pageSize}`;
+
+    const resp = await fetch(baseUrl)
+    const data = await resp.json();
+    return {
+        certificates: data.data,
+        pagination: data.meta.pagination
+    }
+}
+
+// get certificate detail
+export async function getCertificateDetails(id: string) {
+    const baseUrl = `http://127.0.0.1:1337/api/certificates/${id}?populate[0]=imgUrl`;
+
+    const resp = await fetch(baseUrl);
+    const data = await resp.json();
+    return data.data;
+}

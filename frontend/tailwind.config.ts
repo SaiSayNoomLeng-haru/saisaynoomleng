@@ -30,7 +30,8 @@ export default {
         'fs-200': '0.77rem'
       },
       gridTemplateColumns: {
-        'main-grid' : '1fr auto'
+        'main-grid' : '1fr auto',
+        'filter-grid' : '200px 1fr'
       },
       darkMode: 'class',
       animation: {
